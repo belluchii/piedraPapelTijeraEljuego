@@ -2,7 +2,7 @@ let piedra = document.querySelector("#piedra");
 let papel = document.querySelector("#papel");
 let tijera = document.querySelector("#tijera");
 let humano = piedra.checked ? "piedra" : papel.checked ? "papel" : "tijera";
-let container = document.querySelector(".container");
+let container = document.querySelector(".containerHijo");
 let piedra1 = document.querySelector(".piedra1");
 let papel1 = document.querySelector(".papel1");
 let tijera1 = document.querySelector(".tijera1");
@@ -25,12 +25,16 @@ function cuentaRegresiva() {
       console.log(pi);
     } else if (suma === 2) {
       pa = "papel";
+      piedra1.classList.add("piedra1");
       papel1.classList.remove("papel1");
       console.log(pa);
     } else if (suma === 3) {
       tj = "tijera";
+      papel1.classList.add("papel1");
       tijera1.classList.remove("tijera1");
       console.log(tj);
+    } else if (suma) {
+      tijera1.classList.add("tijera1");
     }
     contador();
   }, 1000);
@@ -50,11 +54,11 @@ piedra.addEventListener("click", function () {
     compu = Math.floor(Math.random() * 3);
     cuentaRegresiva();
     if (compu == 0) {
-      alert("empate");
+      console.log("empate");
     } else if (compu == 1) {
-      alert("perdiste");
+      console.log("perdiste");
     } else {
-      alert("ganaste");
+      console.log("ganaste");
     }
   }
 });
