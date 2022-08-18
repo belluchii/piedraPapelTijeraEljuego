@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerHijo">
+        <h1>A Jugar</h1>
+        <div>
+          <input id="piedra" type="radio" name="valor" />
+          <label for="piedra"
+            ><img
+              src="data:image/png;base64,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"
+              alt="piedra"
+              height="20px"
+          /></label>
+        </div>
+        <div>
+          <input type="radio" name="valor" id="papel" />
+          <label for="papel"
+            ><img
+              src="https://png.pngitem.com/pimgs/s/592-5920636_rock-paper-scissors-clipart-rock-paper-scissors-png.png"
+              alt="papel"
+              height="20px"
+          /></label>
+        </div>
+        <div>
+          <input type="radio" name="valor" id="tijera" />
+          <label for="tijera"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KAZtQUpeqelxjO89TJxMfAFtWsX1SCIwCXNaY3HNhfKSy5WTZKEF4K5nWX7upL5NvKo&usqp=CAU"
+              alt="papel"
+              height="20px"
+          /></label>
+        </div>
+        <h2>Elije una opcion</h2>
+      </div>
+      <div class="piedra1">PIEDRA</div>
+      <div class="papel1">PAPEL</div>
+      <div class="tijera1">TIJERA</div>
+    </div>
+  </body>
+</html>

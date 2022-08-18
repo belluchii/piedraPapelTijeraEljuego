@@ -1,0 +1,75 @@
+body {
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  background: linear-gradient(45deg, slateblue, purple);
+  overflow: hidden;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerHijo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  position: absolute;
+  transform: translatey(-250%);
+}
+h2 {
+  position: absolute;
+  transform: translatey(300%);
+  color: #fff;
+}
+input {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+img {
+  padding: 1em;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+.puto {
+  display: none;
+}
+img:hover {
+  filter: grayscale(100%) brightness(30%);
+  -webkit-filter: grayscale(100%) brightness(30%);
+  -moz-filter: grayscale(100%) brightness(30%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cuenta {
+  font-size: 100px;
+  display: none;
+}
+
+.piedra1 {
+  display: none;
+}
+.papel1 {
+  display: none;
+}
+.tijera1 {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(45deg, purple, slateblue);
+  }
+}
